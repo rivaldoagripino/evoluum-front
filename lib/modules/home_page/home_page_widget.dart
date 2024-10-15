@@ -112,8 +112,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             builder: (context) {
                                               final litItensData =
                                                   homePageTodoListItensResponse
-                                                      .jsonBody
-                                                      .toList();
+                                                  .jsonBody?.toList() ?? [];
 
                                               return ListView.separated(
                                                 padding: const EdgeInsets.symmetric(
